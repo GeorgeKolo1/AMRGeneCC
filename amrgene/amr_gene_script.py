@@ -23,8 +23,8 @@ def AMR_gene_concat(folder):
         temp_df = pd.read_csv(f, sep='\t')
         temp_df['sample'] = sample_name
         for i in temp_df['sample']:
-            d_gene[f'{i}'] = temp_df['Best_Hit_ARO']
-            d_antimicrobial[f'{i}'] = temp_df['Antibiotic']
+            d_gene[f'{i}'] = temp_df['Elemental symbol']
+            d_antimicrobial[f'{i}'] = temp_df['Subclass']
 
     temp_df_gene = pd.DataFrame(data=d_gene)
     temp_df_antibiotic = pd.DataFrame(data=d_antimicrobial)
