@@ -19,7 +19,7 @@ It is recommended to do this in a conda environment or virtual environment to pr
 
 ### Easy option - pip install straight from github (no clone required)
 
-pip install git+https://github.com/GeorgeKolo1/AMRGeneCC.git
+```pip install git+https://github.com/GeorgeKolo1/AMRGeneCC.git```
 
 
 ### Testing the installation
@@ -43,3 +43,8 @@ The amrgeneCC tool outputs two CSV files:
 
 
 The output files will be saved to the directory/folder that you provide the amrgene function with
+
+## Citation
+
+If you use this tool in your academic or any other form of research please cite the tool! 
+You can do this using the cite this repository dropdown on the righthand side of this page/repository.
