@@ -4,7 +4,6 @@ import os
 
 
 def AMR_gene_concat(folder):
-    
 
     # Get all .fasta.gz.txt files
     files = glob.glob(os.path.join(folder, '*.fasta.gz.txt'))
@@ -30,8 +29,8 @@ def AMR_gene_concat(folder):
     temp_df_gene = pd.DataFrame(data=d_gene)
     temp_df_antibiotic = pd.DataFrame(data=d_antimicrobial)
 
-    temp_df_gene.to_csv(folder + 'AMR_genes_results.csv')
-    temp_df_antibiotic.to_csv(folder + 'AMR_antibiotic_results.csv')
+    temp_df_gene.to_csv(os.path.join(folder, 'AMR_genes_results.csv'))
+    temp_df_antibiotic.to_csv(os.path.join(folder, 'AMR_antibiotic_results.csv'))
 
     
 
