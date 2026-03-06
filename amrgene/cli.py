@@ -4,7 +4,7 @@ import sys
 from amrgene.amr_gene_script import AMR_gene_concat
 
 def main():
-    parser = argparse.ArugmentParser(
+    parser = argparse.ArgumentParser(
         description='Concatenate AMR gene results from RGI output files'
     )
     parser.add_argument(
