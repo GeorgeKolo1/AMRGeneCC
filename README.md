@@ -17,6 +17,11 @@ It is recommended to do this in a conda environment or virtual environment to pr
 
 ```pip install .```
 
+### Easy option - pip install straight from github (no clone required)
+
+pip install git+https://github.com/GeorgeKolo1/AMRGeneCC.git
+
+
 ### Testing the installation
 
 You can test the installation by running <amrgene --help or amrgene -h>
