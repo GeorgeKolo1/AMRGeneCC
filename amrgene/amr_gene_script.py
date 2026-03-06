@@ -6,7 +6,7 @@ import os
 def AMR_gene_concat(folder):
 
     # Get all .fasta.gz.txt files
-    files = glob.glob(os.path.join(folder, '*.fasta.gz.txt'))
+    files = glob.glob(os.path.join(folder, '*.fasta.gz_results.tsv'))
 
     d_gene = {}
     d_antimicrobial = {}
