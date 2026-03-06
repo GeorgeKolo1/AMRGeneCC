@@ -34,7 +34,6 @@ The amrgeneCC tool is very simple, it takes only a single input which is the pat
 The amrgeneCC tool outputs two CSV files:
 
   AMR_genes_results.csv: a file that contains each isolate as a column with the rows containing individual AMR genes identified
-  
   AMR_antibiotics_results.csv: a file that contains each isolate as a column with the rows containing individual antibiotics that the isolate is predicted to be resistant to
 
 
