@@ -7,13 +7,15 @@ You can install this package by opening the terminal/windows powershell etc and 
 ### Git clone & pip install
 
 It is recommended to do this in a conda environment or virtual environment to prevent conflicts between dependencies.
-**Make sure you have pip installed.** To install pip in a conda environment you can use the following command: <conda install pip>
+**Make sure you have pip installed.** To install pip in a conda environment you can use the following command: ```conda install pip```
 
-1. 
-<git clone https://github.com/GeorgeKolo1/AMRGeneCC.git>
+1.
+
+```git clone https://github.com/GeorgeKolo1/AMRGeneCC.git```
 
 2.
-<pip install .>
+
+```pip install .```
 
 ### Testing the installation
 
@@ -21,7 +23,7 @@ You can test the installation by running <amrgene --help or amrgene -h>
 
 ## Example Usage
 
-<amrgene PATH/TO/YOUR/FILES/>
+```amrgene PATH/TO/YOUR/FILES/```
 
 ## Input
 
