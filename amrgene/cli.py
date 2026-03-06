@@ -1,5 +1,4 @@
 import argparse
-import sys
 
 from amrgene.amr_gene_script import AMR_gene_concat
 
