@@ -28,11 +28,14 @@ You can test the installation by running <amrgene --help or amrgene -h>
 
 ## Example Usage
 
-```amrgene PATH/TO/YOUR/FILES/```
+```amrgene -folder PATH/TO/YOUR/FILES/ -column_1 Best_Hit_ARO -column_2 Antibiotic```
 
 ## Input
 
-The amrgeneCC tool is very simple, it takes only a single input which is the path to your folder containing the results files from NCBI AmrFinder
+The amrgeneCC tool is very simple, it takes three inputs:
+    -folder which is the path to your folder containing the results files from NCBI AmrFinder
+    -column_1 which is the name of the first column of the NCBI AMRFinder results file you want to concatenate
+    -column_2 which is the name of the second column ofn the NCBI AMRFinder results file you want to concatenate.
 
 ## Output
 
