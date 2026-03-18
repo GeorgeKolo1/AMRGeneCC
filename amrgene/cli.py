@@ -10,9 +10,17 @@ def main():
         'folder',
         help='Path to the folder containing your AMRFinder results file (should end in .fasta.gz.txt)',
     )
+    parser.add_argument(
+        'column_1',
+        help='Name of the column in the AMRFinder results file',
+    )
+    parser.add_argument(
+        'column_2',
+        help='Name of another column in the AMRFinder results file',
+    )
 
     args = parser.parse_args()
-    AMR_gene_concat(args.folder)
+    AMR_gene_concat(args.folder, args.column_1, args.column_2)
 
 if __name__ == "__main__":
     main()

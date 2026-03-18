@@ -3,7 +3,7 @@ import glob
 import os
 
 
-def AMR_gene_concat(folder):
+def AMR_gene_concat(folder, column1, column2):
 
     # Get all .fasta.gz.txt files
     files = glob.glob(os.path.join(folder, '*.fasta.gz_results.tsv'))
@@ -23,8 +23,8 @@ def AMR_gene_concat(folder):
         temp_df = pd.read_csv(f, sep='\t')
         temp_df['sample'] = sample_name
         for i in temp_df['sample']:
-            d_gene[f'{i}'] = temp_df['Elemental symbol']
-            d_antimicrobial[f'{i}'] = temp_df['Subclass']
+            d_gene[f'{i}'] = temp_df[column1]
+            d_antimicrobial[f'{i}'] = temp_df[column2]
 
     temp_df_gene = pd.DataFrame(data=d_gene)
     temp_df_antibiotic = pd.DataFrame(data=d_antimicrobial)
